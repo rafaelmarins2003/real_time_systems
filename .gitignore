@@ -1,0 +1,56 @@
+# --------------------------------------------------------------------------- #
+# STM32CubeIDE / Eclipse CDT .gitignore
+# --------------------------------------------------------------------------- #
+
+# Pastas de build do CubeIDE (geradas a cada compilação Debug/Release)
+Debug/
+Release/
+
+# Estado do workspace Eclipse (se o workspace ficar dentro do repo)
+.metadata/
+
+# Binários e artefatos de compilação (caso soltem fora do Debug/Release)
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+*.lst
+*.su
+*.srec
+*.srf
+*.i
+*.s.o
+
+# Objetos, dependências e bibliotecas
+*.o
+*.d
+*.obj
+*.a
+*.lib
+
+# Makefiles gerados pelo managed build (não confundir com Makefile manual)
+objects.mk
+sources.mk
+makefile
+*.mk
+!Makefile
+
+# Logs e relatórios do build
+*.log
+*.size
+
+# Arquivos temporários e de backup do Eclipse/editor
+*.tmp
+*.bak
+*~
+*.swp
+*.orig
+
+# Configurações de launch (debug configurations) - descomente para ignorar
+# *.launch
+
+# Diretórios de cache de ferramentas externas (se usadas)
+.cache/
+.vscode/
+compile_commands.json
